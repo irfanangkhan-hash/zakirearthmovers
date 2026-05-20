@@ -56,13 +56,36 @@ body{
 /* HERO */
 
 .hero{
-    height:90vh;
+    height:100vh;
     background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
     background-size:cover;
     background-position:center;
     display:flex;
     justify-content:center;
     align-items:center;
+    animation:slider 15s infinite;
+}
+
+/* IMAGE SLIDER */
+
+@keyframes slider{
+
+    0%{
+        background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
+    }
+
+    35%{
+        background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1400&auto=format&fit=crop');
+    }
+
+    70%{
+        background-image:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1400&auto=format&fit=crop');
+    }
+
+    100%{
+        background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
+    }
+
 }
 
 .overlay{
