@@ -75,14 +75,12 @@ header{
 
 .hero{
     height:100vh;
+    background-size:cover;
+    background-position:center;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:20px;
-    background-size:cover;
-    background-position:center;
-    animation:slider 18s infinite;
+    animation:slider 20s infinite;
     position:relative;
 }
 
@@ -163,16 +161,60 @@ header{
 background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
 }
 
-35%{
+7%{
 background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1400&auto=format&fit=crop');
 }
 
-70%{
+14%{
 background-image:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1400&auto=format&fit=crop');
 }
 
+21%{
+background-image:url('https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1400&auto=format&fit=crop');
+}
+
+28%{
+background-image:url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1400&auto=format&fit=crop');
+}
+
+35%{
+background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop');
+}
+
+42%{
+background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop');
+}
+
+49%{
+background-image:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop');
+}
+
+56%{
+background-image:url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1400&auto=format&fit=crop');
+}
+
+63%{
+background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop');
+}
+
+70%{
+background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop');
+}
+
+77%{
+background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1400&auto=format&fit=crop');
+}
+
+84%{
+background-image:url('https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1400&auto=format&fit=crop');
+}
+
+91%{
+background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+}
+
 100%{
-background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
+background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1400&auto=format&fit=crop');
 }
 
 }
@@ -202,13 +244,13 @@ section{
 
 .services-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
 .service-card{
     background:#1b1b1b;
-    padding:40px 30px;
+    padding:35px;
     border-radius:20px;
     transition:0.4s;
     border:1px solid #222;
@@ -220,13 +262,30 @@ section{
 }
 
 .service-card h3{
-    margin:20px 0;
     color:#ffb400;
+    margin-bottom:15px;
+    font-size:24px;
 }
 
 .service-card p{
     color:#ccc;
     line-height:1.7;
+}
+
+.service-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ffb400;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.service-btn:hover{
+    background:#fff;
 }
 
 /* ABOUT */
@@ -403,18 +462,6 @@ Reliable <span>Earth Work</span> & Mining Solutions
 Specialized in Earth Excavation, Hard Rock Cutting, Mining Operations & Disposal Services with Advanced Machinery and Professional Workforce.
 </p>
 
-<div class="hero-btns">
-
-<a href="#" class="btn btn-yellow">
-Call Now
-</a>
-
-<a href="#" class="btn btn-dark">
-Get Quotation
-</a>
-
-</div>
-
 </div>
 
 </section>
@@ -445,30 +492,260 @@ Zakir Earth Movers is a professional excavation and mining company based in Hary
 
 <section>
 
+<div class="services-grid">
+
+<section id="services">
+
 <div class="section-title">
-
-<h2>Our Services</h2>
-
-<p>Professional Mining & Excavation Solutions</p>
-
+<h2>Professional Mining & Excavation Solutions</h2>
+<p>Reliable Earth Work, Mining & Heavy Machinery Services</p>
 </div>
 
 <div class="services-grid">
 
-<div class="service-card">
-<h3>Earth Work</h3>
-<p>Land leveling, soil excavation, road earth filling and site preparation services.</p>
+<!-- CARD 1 -->
+
+<div class="service-card" id="earthwork">
+
+<h3>🚜 Earth Work</h3>
+
+<p>
+Land leveling, site preparation, road earth filling and soil excavation services.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
 </div>
 
-<div class="service-card">
-<h3>Hard Rock Excavation</h3>
-<p>Rock cutting, blasting support, hill excavation and crusher feeding operations.</p>
+<!-- CARD 2 -->
+
+<div class="service-card" id="rockexcavation">
+
+<h3>⛏ Hard Rock Excavation</h3>
+
+<p>
+Professional rock cutting, hill excavation and blasting support operations.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
 </div>
 
-<div class="service-card">
-<h3>Mining Operations</h3>
-<p>Open mining work, heavy machinery operation and material extraction services.</p>
+<!-- CARD 3 -->
+
+<div class="service-card" id="mining">
+
+<h3>🏗 Mining Operations</h3>
+
+<p>
+Open mining work, material extraction and heavy equipment operations.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
 </div>
+
+<!-- CARD 4 -->
+
+<div class="service-card" id="transportation">
+
+<h3>🚛 Disposal & Transportation</h3>
+
+<p>
+Mining waste transportation, debris removal and dumping services.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="service-card" id="rockbreaking">
+
+<h3>🔨 Hydraulic Rock Breaking</h3>
+
+<p>
+Advanced hydraulic rock breaking and non-blasting excavation methods.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="service-card" id="soilexcavation">
+
+<h3>🌍 Soil Excavation</h3>
+
+<p>
+Controlled soil excavation and underground utility safety solutions.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 7 -->
+
+<div class="service-card" id="machinery">
+
+<h3>🚧 Heavy Machinery Rental</h3>
+
+<p>
+Excavators, JCBs, dumpers, loaders and tippers available for projects.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 8 -->
+
+<div class="service-card" id="crusherfeeding">
+
+<h3>⚙ Crusher Feeding</h3>
+
+<p>
+Efficient crusher feeding and material loading services for mining operations.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 9 -->
+
+<div class="service-card" id="hillcutting">
+
+<h3>🏔 Hill Cutting Services</h3>
+
+<p>
+Safe and reliable hill cutting and hard surface excavation solutions.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 10 -->
+
+<div class="service-card" id="openmining">
+
+<h3>🏭 Open Mining Work</h3>
+
+<p>
+Industrial open mining services using advanced machinery and technology.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 11 -->
+
+<div class="service-card" id="dumping">
+
+<h3>🚜 Dumping Services</h3>
+
+<p>
+Fast and secure dumping and disposal operations for construction sites.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 12 -->
+
+<div class="service-card" id="sitepreparation">
+
+<h3>📍 Site Preparation</h3>
+
+<p>
+Complete site clearing, leveling and preparation for infrastructure projects.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 13 -->
+
+<div class="service-card" id="roadfilling">
+
+<h3>🛣 Road Earth Filling</h3>
+
+<p>
+Road construction earth filling and ground stabilization services.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 14 -->
+
+<div class="service-card" id="debrisremoval">
+
+<h3>♻ Debris Removal</h3>
+
+<p>
+Construction debris and demolition waste removal with transportation support.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+<!-- CARD 15 -->
+
+<div class="service-card" id="industrialexcavation">
+
+<h3>🏢 Industrial Excavation</h3>
+
+<p>
+Industrial building excavation and deep foundation earth work solutions.
+</p>
+
+<a href="#contact" class="service-btn">
+Get Service
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 </div>
 
@@ -524,11 +801,13 @@ Zakir Earth Movers is a professional excavation and mining company based in Hary
 
 </footer>
 
-<!-- FLOATING BUTTONS -->
+<!-- WHATSAPP BUTTON -->
 
 <a href="https://wa.me/919812177046" class="whatsapp-float">
 💬
 </a>
+
+<!-- CALL BUTTON -->
 
 <a href="tel:+919812177046" class="call-float">
 📞
