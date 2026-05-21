@@ -514,17 +514,19 @@ justify-content:center;
 align-items:center;
 }
 
-.director-card{
-display:grid;
-grid-template-columns:350px 1fr;
-gap:40px;
-background:#161616;
-padding:40px;
-border-radius:25px;
-align-items:center;
-max-width:1200px;
-border:1px solid rgba(255,255,255,0.08);
+.owner-photo{
+width:100%;
+max-width:320px;
+height:380px;
+object-fit:cover;
+border-radius:20px;
+border:3px solid #ffb400;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
 transition:0.4s;
+}
+
+.owner-photo:hover{
+transform:scale(1.03);
 }
 
 .director-card:hover{
@@ -532,12 +534,9 @@ transform:translateY(-10px);
 border-color:#ffb400;
 }
 
-.owner-photo{
-    width:300px;
-    border-radius:15px;
-    object-fit:cover;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
+.director-card{
+background:linear-gradient(145deg,#161616,#1f1f1f);
+}    
 
 .director-content h3{
 font-size:38px;
@@ -640,7 +639,7 @@ ZAKIR EARTH MOVERS
 </div>
 
 <div class="menu-btn" onclick="toggleMenu()">
-☰
+    
 </div>
 
 <div class="nav-links" id="navLinks">
@@ -775,7 +774,7 @@ Mr. Zakir Hussain has successfully built the organization with a commitment to q
 </section>  
   
 <!-- BOARD OF DIRECTORS -->
-
+    
 <section id="directors">
 
 <div class="section-title">
@@ -789,47 +788,34 @@ Mr. Zakir Hussain has successfully built the organization with a commitment to q
 
 <div class="director-image">
 
-<div class="director-section">
-<div class="director-image">
-
 <img 
-src="images/MR ZAKIR HUSSAIN.jpeg" 
-alt="Mr. Zakir Hussain - Owner"
+src="images/owner.jpg"
+alt="Mr. Zakir Hussain"
 class="owner-photo"
 >
 
 </div>
 
-<h2>Director</h2>
-<p>Mr. Zakir Ahmed</p>
-
-</div>
-
-</div>
-
 <div class="director-content">
 
-<h3>
-Mr. ZAKIR HUSSAIN
-</h3>
+<h3>Mr. ZAKIR HUSSAIN</h3>
 
-<h4>
-Technical Director
-</h4>
+<h4>Technical Director</h4>
 
 <p>
-A Civil Engineer with a strong construction and infrastructure background. His expertise is reflected in the way he introduces innovative ideas, adopts modern technologies and empowers technical advancements across industrial projects.
+A Civil Engineer with a strong construction and infrastructure background. His expertise is reflected through innovative ideas, modern technologies and advanced industrial project execution.
 </p>
 
 <p>
-He has played a major role in executing and expanding a wide variety of large scale operations including Mass Excavation, Demolition Work using Explosion Methods, Land Development Projects, Pipeline Work and Infrastructure Development Services.
+He has successfully managed large scale Mass Excavation, Rock Breaking, Land Development, Demolition Work, Infrastructure Development and Mining Operations across multiple industrial projects.
 </p>
 
 <a href="#contact" class="service-btn">
 Contact Leadership
 </a>
-
-</div> 
+    
+<h2>Director</h2>
+<p>Mr. Zakir Ahmed</p>
 
 </div>
 
@@ -882,8 +868,13 @@ Contact Leadership
 <h3>🚧 Machinery Rental</h3>
 <p>Excavators, loaders, dumpers and JCB rental services.</p>
 <a href="#" class="service-btn">Learn More</a>
+
+</div>
+    
 </div>
 
+</section>    
+    
 <!-- COMPANY PROFILE SECTION -->
 
 <section id="companies">
