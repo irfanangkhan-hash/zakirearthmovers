@@ -506,75 +506,38 @@ background:#ffb400;
 color:#111;
 }
 
-/* DIRECTORS */
-
-.director-container{
-display:flex;
-justify-content:center;
-align-items:center;
+.owner-section{
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
 }
 
-.owner-photo{
-width:100%;
-max-width:320px;
-height:380px;
-object-fit:cover;
-border-radius:20px;
-border:3px solid #ffb400;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-transition:0.4s;
+.owner-img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff3b30;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
 }
 
-.owner-photo:hover{
-transform:scale(1.03);
+.owner-img:hover{
+    transform: scale(1.05);
 }
 
-.director-card:hover{
-transform:translateY(-10px);
-border-color:#ffb400;
+.owner-name{
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
 }
 
-.director-card{
-background:linear-gradient(145deg,#161616,#1f1f1f);
-}    
-
-.director-content h3{
-font-size:38px;
-color:#ffb400;
-margin-bottom:10px;
+.owner-title{
+    font-size: 18px;
+    color: #666;
 }
-
-.director-content h4{
-font-size:22px;
-margin-bottom:20px;
-color:#fff;
-font-weight:500;
-}
-
-.director-content p{
-color:#ccc;
-line-height:1.9;
-margin-bottom:18px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.director-card{
-grid-template-columns:1fr;
-padding:25px;
-}
-
-.director-image img{
-height:320px;
-}
-
-.director-content h3{
-font-size:30px;
-}
-
-}  
+    
 /* MOBILE */
 
 @media(max-width:768px){
@@ -772,54 +735,47 @@ Mr. Zakir Hussain has successfully built the organization with a commitment to q
 </div>
   
 </section>  
-  
-<!-- BOARD OF DIRECTORS -->
     
+<!-- BOARD OF DIRECTORS -->
+
 <section id="directors">
 
-<div class="section-title">
-<h2>Board of Directors</h2>
-<p>Leadership & Technical Expertise</p>
-</div>
+    <div class="section-title">
+        <h2>Board of Directors</h2>
+        <p>Leadership & Technical Expertise</p>
+    </div>
 
-<div class="director-container">
+    <div class="director-container">
 
-<div class="director-card">
+        <!-- Owner Card -->
+        <div class="director-card">
 
-<div class="director-image">
+            <div class="owner-section">
 
-<img 
-src="images/owner.jpg"
-alt="Mr. Zakir Hussain"
-class="owner-photo"
->
+                <img src="/owner.jpg" alt="Owner Photo" class="owner-img">
 
-</div>
+                <h2 class="owner-name">Mr. Zakir Hussain</h2>
+                <p class="owner-title">Owner</p>
 
-<div class="director-content">
+            </div>
 
-<h3>Mr. ZAKIR HUSSAIN</h3>
+            <div class="director-content">
 
-<h4>Technical Director</h4>
+                <h3>Technical Director</h3>
 
-<p>
-A Civil Engineer with a strong construction and infrastructure background. His expertise is reflected through innovative ideas, modern technologies and advanced industrial project execution.
-</p>
+                <p>
+                    A Civil Engineer with strong construction and infrastructure background.
+                    Expertise in mass excavation, rock breaking, land development, demolition
+                    and large-scale industrial projects.
+                </p>
 
-<p>
-He has successfully managed large scale Mass Excavation, Rock Breaking, Land Development, Demolition Work, Infrastructure Development and Mining Operations across multiple industrial projects.
-</p>
+                <a href="#contact" class="service-btn">Contact Leadership</a>
 
-<a href="#contact" class="service-btn">
-Contact Leadership
-</a>
-    
-<h2>Director</h2>
-<p>Mr. Zakir Ahmed</p>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -1112,7 +1068,7 @@ Explore More
 <img src="4.png" alt="">
 <img src="5.png" alt="">
 <img src="6.png" alt="">
-<img src="6.png" alt="">
+<img src="7.png" alt="">
 
 </div>
 
