@@ -404,7 +404,6 @@ margin-bottom:20px;
 .testimonial h4{
 color:#ffb400;
 }
-
 /* GALLERY */
 
 .gallery-grid{
@@ -477,6 +476,21 @@ text-align:center;
 color:#aaa;
 }
 
+/* GALLERY VIDEOS */
+
+.gallery-grid video{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+    transition:0.3s ease;
+}
+
+.gallery-grid video:hover{
+    transform:scale(1.03);
+}
+    
 /* FLOAT BUTTONS */
 
 .whatsapp-float,
@@ -579,91 +593,6 @@ padding:35px 25px;
 }
 
 }
-
-/* HERO VIDEO SECTION */
-
-.hero-video{
-    position:relative;
-    height:100vh;
-    overflow:hidden;
-}
-
-.bg-video{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.hero-overlay{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.6);
-    z-index:1;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    color:#fff;
-    text-align:center;
-    top:50%;
-    transform:translateY(-50%);
-    padding:20px;
-}
-
-.hero-content h1{
-    font-size:60px;
-    margin-bottom:20px;
-}
-
-.hero-content span{
-    color:#ffcc00;
-}
-
-.hero-content p{
-    font-size:20px;
-    margin-bottom:30px;
-}
-
-.hero-btn{
-    background:#ffcc00;
-    color:#000;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-/* VIDEO GALLERY */
-
-.video-gallery{
-    padding:80px 10%;
-    background:#111;
-}
-
-.section-title{
-    text-align:center;
-    color:#fff;
-    font-size:40px;
-    margin-bottom:40px;
-}
-
-.video-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.video-container video{
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.5);
-}    
-
 </style>
 </head>
 
@@ -1149,33 +1078,7 @@ Heavy excavator machine used for earth digging and site preparation.
 
 </div>
 
-</section>
-
-<!-- WORKING VIDEO SECTION -->
-
-<section class="video-gallery">
-
-    <h2 class="section-title">
-        Our Working Videos
-    </h2>
-
-    <div class="video-container">
-
-        <video controls>
-
-            <source src="videos/ZH.1.mp4" type="video/mp4">
-
-        </video>
-
-        <video controls>
-
-            <source src="videos/ZH.2.mp4" type="video/mp4">
-
-        </video>
-
-    </div>
-
-</section>    
+</section>  
 
 <!-- GALLERY -->
 
@@ -1204,6 +1107,24 @@ Heavy excavator machine used for earth digging and site preparation.
 </div>
 
 </section>
+
+<!-- VIDEOS -->
+
+<video controls>
+
+<source src="videos/ZH.1.mp4" type="video/mp4">
+
+</video>
+
+<video controls>
+
+<source src="videos/ZH.2.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</section>    
 
 <!-- CONTACT -->
 
