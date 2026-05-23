@@ -80,7 +80,7 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-z-index:1000;
+z-index:9999;
 background:rgba(0,0,0,0.75);
 backdrop-filter:blur(10px);
 border-bottom:1px solid rgba(255,255,255,0.08);
@@ -96,31 +96,38 @@ align-items:center;
 padding:18px 0;
 }
 
+/* LOGO */
 .logo img{
 height:85px;
 width:auto;
 display:block;
+transition:0.3s ease;
 }
 
+/* NAV LINKS (DESKTOP) */
 .nav-links{
 display:flex;
 gap:25px;
+align-items:center;
 }
 
 .nav-links a{
 color:#fff;
 font-weight:500;
 transition:0.3s;
+text-decoration:none;
 }
 
 .nav-links a:hover{
 color:#ffb400;
 }
 
+/* MENU BUTTON (HIDDEN ON DESKTOP) */
 .menu-btn{
 display:none;
 font-size:30px;
 cursor:pointer;
+color:#fff;
 }
 
 /* HERO SLIDER */
@@ -574,37 +581,38 @@ color:#111;
     color: #666;
 }
     
-/* MOBILE */
-
+/* MOBILE RESPONSIVE */
+   
 @media(max-width:768px){
 
 .menu-btn{
 display:block;
 }
-.logo img{
-height:65px;
-}
 
-}
-   
 .nav-links{
 display:none;
-flex-direction:column;
 position:absolute;
 top:80px;
 left:0;
 width:100%;
 background:#111;
+flex-direction:column;
 padding:20px;
+gap:15px;
 }
 
 .nav-links.active{
 display:flex;
 }
 
+.logo img{
+height:65px;
+}
+
+}
+
 .menu-btn{
 display:block;
-}
 
 }
 
