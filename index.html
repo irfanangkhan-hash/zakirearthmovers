@@ -490,6 +490,18 @@ transition:0.3s ease;
 .gallery-video video:hover{
 transform:scale(1.03);
 }
+    .gallery-video{
+overflow:hidden;
+border-radius:18px;
+background:#111;
+}
+
+.gallery-video video{
+width:100%;
+height:260px;
+object-fit:cover;
+display:block;
+}
 /* FLOAT BUTTONS */
 
 .whatsapp-float,
@@ -1103,9 +1115,11 @@ Heavy excavator machine used for earth digging and site preparation.
 
 <div class="gallery-video">
 
-<video controls muted playsinline>
+<video controls autoplay muted loop playsinline preload="metadata">
 
-<source src="videos/ZH1_optimized.mp4" type="video/mp4">
+<source src="./ZH1_optimized.mp4" type="video/mp4">
+
+Your browser does not support video.
 
 </video>
 
@@ -1113,9 +1127,11 @@ Heavy excavator machine used for earth digging and site preparation.
 
 <div class="gallery-video">
 
-<video controls muted playsinline>
+<video controls autoplay muted loop playsinline preload="metadata">
 
-<source src="videos/ZH2_optimized.mp4" type="video/mp4">
+<source src="./ZH2_optimized.mp4" type="video/mp4">
+
+Your browser does not support video.
 
 </video>
 
