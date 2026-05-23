@@ -477,20 +477,7 @@ color:#aaa;
 }
 /* GALLERY VIDEOS */
 
-.gallery-video video{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:18px;
-background:#000;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
-transition:0.3s ease;
-}
-
-.gallery-video video:hover{
-transform:scale(1.03);
-}
-    .gallery-video{
+.gallery-video{
 overflow:hidden;
 border-radius:18px;
 background:#111;
@@ -501,6 +488,14 @@ width:100%;
 height:260px;
 object-fit:cover;
 display:block;
+background:#000;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+transition:0.3s ease;
+border-radius:18px;
+}
+
+.gallery-video video:hover{
+transform:scale(1.03);
 }
 /* FLOAT BUTTONS */
 
@@ -1119,11 +1114,9 @@ Heavy excavator machine used for earth digging and site preparation.
 
 <div class="gallery-video">
 
-<video controls autoplay muted loop playsinline preload="metadata">
+<video controls muted playsinline preload="metadata">
 
 <source src="videos/ZH1_optimized.mp4" type="video/mp4">
-
-Your browser does not support video.
 
 </video>
 
@@ -1131,17 +1124,15 @@ Your browser does not support video.
 
 <div class="gallery-video">
 
-<video controls autoplay muted loop playsinline preload="metadata">
+<video controls muted playsinline preload="metadata">
 
 <source src="videos/ZH2_optimized.mp4" type="video/mp4">
-
-Your browser does not support video.
 
 </video>
 
 </div>
 
-</div> 
+</div>
     
 <!-- CONTACT -->
 
