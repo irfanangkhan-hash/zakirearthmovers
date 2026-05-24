@@ -131,21 +131,20 @@ color:#fff;
 }
 
 /* HERO SLIDER */
-
 .hero-slider{
 position:relative;
 height:100vh;
 overflow:hidden;
 }
 
+/* SLIDE */
 .slide{
 position:absolute;
-top:0;
-left:0;
+inset:0;
 width:100%;
 height:100%;
 opacity:0;
-transform:scale(1.05);
+transform:scale(1.08);
 transition:opacity 1.2s ease, transform 6s ease;
 }
 
@@ -155,6 +154,7 @@ z-index:1;
 transform:scale(1);
 }
 
+/* IMAGE / VIDEO */
 .slide img,
 .slide video{
 width:100%;
@@ -166,10 +166,11 @@ object-fit:cover;
 .overlay{
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.55);
+z-index:1;
 }
 
-/* HERO TEXT */
+/* HERO CONTENT */
 .hero-content{
 position:absolute;
 top:50%;
@@ -182,18 +183,18 @@ z-index:2;
 animation:fadeUp 1.2s ease;
 }
 
-/* ANIMATION */
+/* FIXED ANIMATION (IMPORTANT FIX) */
 @keyframes fadeUp{
 from{
 opacity:0;
-transform:translate(-50%,-45%);
+transform:translate(-50%,-40%) scale(0.95);
 }
 to{
 opacity:1;
-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%) scale(1);
 }
 }
-
+   
 /* TITLE */
 .hero-content h1{
 font-size:72px;
@@ -201,21 +202,23 @@ line-height:1.2;
 margin-bottom:25px;
 font-weight:800;
 color:#fff;
+text-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
+/* HIGHLIGHT TEXT */
 .hero-content span{
 color:#ffb400;
 }
-
-/* TEXT */
+   
+/* PARAGRAPH */
 .hero-content p{
 font-size:20px;
 line-height:1.8;
-color:#ddd;
+color:#e6e6e6;
 margin-bottom:35px;
 }
 
-/* BUTTONS */
+/* BUTTON WRAPPER */
 .hero-btns{
 display:flex;
 justify-content:center;
@@ -223,7 +226,7 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-/* COMMON BUTTON */
+/* BASE BUTTON */
 .btn{
 padding:15px 34px;
 border-radius:50px;
@@ -237,6 +240,7 @@ text-decoration:none;
 .btn-primary{
 background:#ffb400;
 color:#111;
+border:2px solid transparent;
 }
 
 .btn-primary:hover{
@@ -248,13 +252,15 @@ transform:translateY(-5px);
 .btn-outline{
 border:2px solid #ffb400;
 color:#fff;
+background:transparent;
 }
 
 .btn-outline:hover{
 background:#ffb400;
 color:#111;
+transform:translateY(-5px);
 }
-   
+ 
 /* SECTION TITLE */
 
 .section-title{
@@ -602,9 +608,11 @@ color:#111;
     color: #666;
 }
     
-/* MOBILE RESPONSIVE */
-   
-@media(max-width:768px){
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
 
 .menu-btn{
 display:block;
@@ -620,6 +628,7 @@ background:#111;
 flex-direction:column;
 padding:20px;
 gap:15px;
+z-index:999;
 }
 
 .nav-links.active{
@@ -628,13 +637,6 @@ display:flex;
 
 .logo img{
 height:65px;
-}
-
-}
-
-.menu-btn{
-display:block;
-
 }
 
 .hero-content h1{
@@ -652,9 +654,8 @@ font-size:34px;
 
 .contact{
 padding:35px 25px;
-} 
-}    
- 
+}
+}
 </style>
     
 </head>
@@ -699,87 +700,83 @@ padding:35px 25px;
 
 </header>
 
-<!-- HERO SLIDER -->
 <section class="hero-slider">
+
+<!-- ARROWS -->
+<button class="prev">&#10094;</button>
+<button class="next">&#10095;</button>
+
+<!-- DOTS -->
+<div class="dots"></div>
 
 <!-- SLIDE 1 -->
 <div class="slide active">
-
-<video autoplay muted loop playsinline>
-<source src="video.mp4" type="video/mp4">
-Your browser does not support video tag.
-</video>
-
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop">
 <div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>
-Reliable <span>Earth Work</span> & Mining Solutions
-</h1>
-
-<p>
-Professional Earth Excavation, Mining Operations, Rock Cutting & Heavy Machinery Services Across India.
-</p>
-
-<div class="hero-btns">
-<a href="#services" class="btn btn-primary">Explore Services</a>
-<a href="https://wa.me/919812177046" class="btn btn-outline">Get Quote</a>
-</div>
-
-</div>
+<div class="hero-content">Earth Excavation Services</div>
 </div>
 
 <!-- SLIDE 2 -->
 <div class="slide">
-
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop"
-alt="Excavation Machinery">
-
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop">
 <div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>
-Advanced <span>Excavation</span> Services
-</h1>
-
-<p>
-Heavy Excavator & Mining Machinery Solutions For Industrial Projects.
-</p>
-
-<div class="hero-btns">
-<a href="#projects" class="btn btn-primary">View Projects</a>
-<a href="#contact" class="btn btn-outline">Contact Us</a>
-</div>
-
-</div>
+<div class="hero-content">Mining Operations</div>
 </div>
 
 <!-- SLIDE 3 -->
 <div class="slide">
-
-<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop"
-alt="Mining Operation">
-
+<img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1600&auto=format&fit=crop">
 <div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>
-Professional <span>Mining</span> Operations
-</h1>
-
-<p>
-Trusted Earth Movers Company With Skilled Operators & Modern Machines.
-</p>
-
-<div class="hero-btns">
-<a href="#gallery" class="btn btn-primary">Our Gallery</a>
-<a href="#contact" class="btn btn-outline">Hire Now</a>
+<div class="hero-content">Heavy Earth Movers Machinery</div>
 </div>
 
+<!-- SLIDE 4 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Construction Work Solutions</div>
 </div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Rock Cutting & Drilling</div>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1621619856624-1c8f5c0c7c91?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Road Construction Projects</div>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1590644365607-1c8b0f6d9b67?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Land Development Services</div>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1601758123927-196c3b1f1c43?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Industrial Earthwork</div>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Bulk Excavation Projects</div>
+</div>
+
+<!-- SLIDE 10 -->
+<div class="slide">
+<img src="https://images.unsplash.com/photo-1601582589907-f92af5eddb6a?q=80&w=1600&auto=format&fit=crop">
+<div class="overlay"></div>
+<div class="hero-content">Trusted Earth Movers Company</div>
 </div>
 
 </section>
