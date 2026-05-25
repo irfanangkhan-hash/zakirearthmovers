@@ -432,6 +432,133 @@ margin-bottom:20px;
 .testimonial h4{
 color:#ffb400;
 }
+
+/* COMPANY PROFILE PDF */
+
+.profile-container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.profile-card{
+width:100%;
+background:#161616;
+border-radius:25px;
+padding:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.4s;
+}
+
+.profile-card:hover{
+border-color:#ffb400;
+transform:translateY(-8px);
+}
+
+.pdf-badge{
+display:inline-block;
+background:#ffb400;
+color:#111;
+padding:10px 18px;
+border-radius:30px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.profile-left h3{
+font-size:36px;
+margin-bottom:20px;
+color:#ffb400;
+}
+
+.profile-left p{
+line-height:1.9;
+color:#ccc;
+margin-bottom:25px;
+}
+
+.profile-features{
+list-style:none;
+margin-bottom:30px;
+}
+
+.profile-features li{
+margin-bottom:14px;
+color:#ddd;
+font-size:16px;
+}
+
+.profile-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.profile-btn{
+background:#ffb400;
+color:#111;
+padding:15px 28px;
+border-radius:40px;
+font-weight:600;
+transition:0.3s;
+display:inline-block;
+}
+
+.profile-btn:hover{
+background:#fff;
+transform:translateY(-5px);
+}
+
+.outline-btn{
+background:transparent;
+border:2px solid #ffb400;
+color:#fff;
+}
+
+.outline-btn:hover{
+background:#ffb400;
+color:#111;
+}
+
+.profile-right{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.pdf-preview{
+width:100%;
+height:100%;
+min-height:320px;
+background:#0f0f0f;
+border-radius:20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.pdf-preview{
+font-size:70px;
+}
+
+.pdf-preview h4{
+font-size:28px;
+margin:20px 0 10px;
+color:#ffb400;
+}
+
+.pdf-preview p{
+color:#bbb;
+line-height:1.8;
+}   
+   
 /* GALLERY */
 
 .gallery-grid{
@@ -691,6 +818,7 @@ padding:35px 25px;
 <a href="#companies">Companies</a> 
 <a href="#directors">Directors</a>  
 <a href="#projects">Projects</a>
+<a href="#documents">Documents</a>   
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 
@@ -1105,6 +1233,92 @@ Heavy excavator machine used for earth digging and site preparation.
 
 </section>  
 
+<!-- COMPANY PROFILE PDF SECTION -->
+
+<section id="company-profile">
+
+<div class="section-title">
+<h2>Company Profile</h2>
+<p>
+Download Our Professional Company Brochure & Industrial Capability Profile
+</p>
+</div>
+
+<div class="profile-container">
+
+<div class="profile-card">
+
+<div class="profile-left">
+
+<div class="pdf-badge">
+📄 PDF DOCUMENT
+</div>
+
+<h3>
+Zakir Earth Movers Company Profile
+</h3>
+
+<p>
+Professional Earth Excavation, Hard Rock Excavation, Mining Operations,
+Debris Transportation, Demolition Work, Soil Excavation and Heavy Machinery Services.
+</p>
+
+<ul class="profile-features">
+
+<li>✔ Hard Rock Excavation</li>
+<li>✔ Mining & Crusher Operations</li>
+<li>✔ Hydraulic Rock Breaking</li>
+<li>✔ Earth Work & Land Development</li>
+<li>✔ Transportation & Disposal Services</li>
+<li>✔ Industrial Infrastructure Projects</li>
+
+</ul>
+
+<div class="profile-buttons">
+
+<a 
+href="pdf/ZAKIR-HUSSAIN-ROZKA.pdf"
+target="_blank"
+class="profile-btn"
+>
+View Company Profile
+</a>
+
+<a 
+href="pdf/ZAKIR-HUSSAIN-ROZKA.pdf"
+download
+class="profile-btn outline-btn"
+>
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="profile-right">
+
+<div class="pdf-preview">
+
+📑
+
+<h4>32 Pages Professional Profile</h4>
+
+<p>
+Industrial Experience, Projects, Excavation Services,
+Transportation Solutions & Company Capability Overview
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+   
 <!-- GALLERY -->
 
 <section id="gallery">
