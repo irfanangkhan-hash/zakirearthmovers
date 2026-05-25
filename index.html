@@ -655,24 +655,32 @@ font-weight:600;
 /* GALLERY VIDEOS */
 
 .gallery-video{
+position:relative;
 overflow:hidden;
-border-radius:18px;
+border-radius:22px;
 background:#111;
+height:320px;
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+transition:0.4s ease;
 }
 
 .gallery-video video{
 width:100%;
-height:260px;
+height:100%;
 object-fit:cover;
 display:block;
 background:#000;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
-transition:0.3s ease;
-border-radius:18px;
+border-radius:22px;
+transition:0.4s ease;
 }
 
-.gallery-video video:hover{
-transform:scale(1.03);
+.gallery-video:hover video{
+transform:scale(1.05);
+}
+
+.gallery-video:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
 /* FLOAT BUTTONS */
 
@@ -1350,30 +1358,50 @@ Transportation Solutions & Company Capability Overview
     
 <!-- VIDEOS -->
 
-<div class="gallery-grid">
+<div class="video-gallery">
+
+<!-- VIDEO 1 -->
 
 <div class="gallery-video">
 
-<video controls muted playsinline preload="metadata">
+<video 
+controls 
+muted 
+playsinline 
+preload="metadata"
+poster="images/video-thumbnail1.jpg"
+>
 
 <source src="videos/ZH1_optimized.mp4" type="video/mp4">
 
+Your browser does not support the video tag.
+
 </video>
 
 </div>
+
+<!-- VIDEO 2 -->
 
 <div class="gallery-video">
 
-<video controls muted playsinline preload="metadata">
+<video 
+controls 
+muted 
+playsinline 
+preload="metadata"
+poster="images/video-thumbnail2.jpg"
+>
 
 <source src="videos/ZH2_optimized.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
 
 </video>
 
 </div>
 
 </div>
-    
+   
 <!-- CONTACT -->
 
 <section id="contact">
