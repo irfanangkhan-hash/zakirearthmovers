@@ -652,17 +652,30 @@ footer span{
 color:#ffb400;
 font-weight:600;
 }
-/* GALLERY VIDEOS */
+/* VIDEO GALLERY */
+
+.video-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
+align-items:stretch;
+}
+
+/* VIDEO CARD */
 
 .gallery-video{
 position:relative;
+width:100%;
+aspect-ratio:1/1;
 overflow:hidden;
 border-radius:22px;
 background:#111;
-height:320px;
-box-shadow:0 8px 25px rgba(0,0,0,0.4);
-transition:0.4s ease;
+box-shadow:0 8px 25px rgba(0,0,0,0.45);
+transition:all 0.4s ease;
 }
+
+/* VIDEO */
 
 .gallery-video video{
 width:100%;
@@ -671,17 +684,20 @@ object-fit:cover;
 display:block;
 background:#000;
 border-radius:22px;
-transition:0.4s ease;
+transition:transform 0.4s ease;
+}
+
+/* HOVER EFFECT */
+
+.gallery-video:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
 }
 
 .gallery-video:hover video{
 transform:scale(1.05);
 }
-
-.gallery-video:hover{
-transform:translateY(-8px);
-box-shadow:0 12px 30px rgba(0,0,0,0.5);
-}
+   
 /* FLOAT BUTTONS */
 
 .whatsapp-float,
@@ -1355,46 +1371,26 @@ Transportation Solutions & Company Capability Overview
 </div>
  
 </section>
-    
-<!-- VIDEOS -->
-
-<div class="video-gallery">
 
 <!-- VIDEO 1 -->
 
+<div class="video-gallery">
+
 <div class="gallery-video">
 
-<video 
-controls 
-muted 
-playsinline 
-preload="metadata"
-poster="images/video-thumbnail1.jpg"
->
+<video controls muted playsinline preload="metadata">
 
 <source src="videos/ZH1_optimized.mp4" type="video/mp4">
-
-Your browser does not support the video tag.
 
 </video>
 
 </div>
 
-<!-- VIDEO 2 -->
-
 <div class="gallery-video">
 
-<video 
-controls 
-muted 
-playsinline 
-preload="metadata"
-poster="images/video-thumbnail2.jpg"
->
+<video controls muted playsinline preload="metadata">
 
 <source src="videos/ZH2_optimized.mp4" type="video/mp4">
-
-Your browser does not support the video tag.
 
 </video>
 
